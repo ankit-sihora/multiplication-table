@@ -1,0 +1,29 @@
+span{display: inline-block;}
+div.box{
+	border: 2px solid;
+	width: 225px;
+	height: 300px;
+}
+textarea.display{
+	width: 88%;
+	margin-right: 20px;
+	margin-left: 10px;
+	height: 50px;
+	font-size: 30px;
+	color: black;
+	background: lightblue;
+}
+textarea{
+	resize: unset;
+}
+button{
+	margin: 5px;
+	width: 40px;
+}
+button.on{
+	width: 60px;
+
+}
+button.try{
+	min-width: 100px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator and multiplication table</title>
+	<link rel="stylesheet" type="text/css" href="new_calc.css">
+</head>
+<body>
+	
+	<div>
+		<h2>This is multiplicaton table </h2>
+		Insret The number you want to get the multiplication table
+		<input type="text" name="multiplication" id="val" placeholder="Insret number">
+		<button class="try" type="button" onclick="myFunction()">Try it</button>
+		<p id="get"></p>
+		<script src="new_calc.js"></script>
+	</div>
+	<hr>
+	<div>
+		<h2>This is for calculation</h2>
+		<input type="text" name="one" id="one" placeholder="enter first number">
+		<p id="get3"></p>
+		<input type="text" name="two" id="two" placeholder="enter second number">
+		<input type="button" name="sign" value="+" onclick="sign('+')">
+		<input type="button" name="sign" value="-" onclick="sign('-')">
+		<input type="button" name="sign" value="*" onclick="sign('*')">
+		<input type="button" name="sign" value="/" onclick="sign('/')">
+		<p>answer is </p>
+		<span><p id="get2"></p></span><span><p id="get4"></p></span>
+	</div>
+	<hr>
+	<div>
+		<h2>This is calculator</h2>
+		<div class="box">
+			<textarea id="a" class="display" name="display" placeholder="off" onclick="myFunction2()" disabled="true"></textarea>
+			<div>
+				<button class="on" onclick="on()">AC/ON</button>
+				<button>C</button>
+				<button>DEL</button>
+			</div>
+			<div>
+				<button>M+</button>
+				<button>M-</button>
+				<button>MRC</button>
+				<button onclick="number('-')">-</button>
+			</div>
+			<div>
+				<button onclick="number(7)">7</button>
+				<button onclick="number(8)">8</button>
+				<button onclick="number(9)">9</button>
+				<button onclick="number('/')">/</button>
+			</div>
+			<div>
+				<button onclick="number(4)">4</button>
+				<button onclick="number(5)">5</button>
+				<button onclick="number(6)">6</button>
+				<button onclick="number('*')">*</button>
+			</div>
+			<div>
+				<button onclick="number(1)">1</button>
+				<button onclick="number(2)">2</button>
+				<button onclick="number(3)">3</button>
+				<button onclick="number('+')">+</button>
+			</div>
+			<div>
+				<button onclick="off()">OFF</button>
+				<button onclick="number(0)">0</button>
+				<button onclick="number('.')">.</button>
+				<button onclick="equ()">=</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

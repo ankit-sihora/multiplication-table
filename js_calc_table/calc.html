@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator and multiplication table</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+</head>
+<body>
+	
+	<div>
+		<h2>This is multiplicaton table </h2>
+		Insret The number you want to get the multiplication table
+		<input type="text" name="multiplication" id="val" placeholder="Insret number">
+		<button type="button" onclick="myFunction()">Try it</button>
+		<p id="get"></p>
+		<script src="calc.js"></script>
+	</div>
+	<hr>
+	<div>
+		<h2>This is for calculation</h2>
+		<input type="text" name="one" id="one" placeholder="enter first number">
+		<p id="get3"></p>
+		<input type="text" name="two" id="two" placeholder="enter second number">
+		<input type="button" name="sign" value="+" onclick="sign('+')">
+		<input type="button" name="sign" value="-" onclick="sign('-')">
+		<input type="button" name="sign" value="*" onclick="sign('*')">
+		<input type="button" name="sign" value="/" onclick="sign('/')">
+		<p>answer is </p>
+		<span><p id="get2"></p></span><span><p id="get4"></p></span>
+	</div>
+</body>
+</html>
